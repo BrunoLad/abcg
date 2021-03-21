@@ -30,7 +30,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   int m_viewportWidth{};
   int m_viewportHeight{};
 
-  float m_angle{};
+  float m_angle_radian{};
   int m_verticesToDraw{};
 
   std::vector<Vertex> m_vertices;

@@ -162,7 +162,7 @@ void OpenGLWindow::standardize() {
 void OpenGLWindow::paintGL() {
   // Animate angle by 15 degrees per second
   float deltaTime{static_cast<float>(getDeltaTime())};
-  m_angle = glm::wrapAngle(m_angle + glm::radians(15.0f) * deltaTime);
+  m_angle_radian = glm::wrapAngle(m_angle_radian + glm::radians(15.0f) * deltaTime);
 
   // Clear color buffer and depth buffer
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -174,7 +174,7 @@ void OpenGLWindow::paintGL() {
 
   // Update uniform variable
   GLint angleLoc{glGetUniformLocation(m_program, "angle")};
-  glUniform1f(angleLoc, m_angle);
+  glUniform1f(angleLoc, m_angle_radian);
 
   // Draw triangles
   glDrawElements(GL_TRIANGLES, m_verticesToDraw, GL_UNSIGNED_INT, nullptr);

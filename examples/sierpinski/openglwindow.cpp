@@ -66,7 +66,7 @@ void OpenGLWindow::paintGL() {
   glBindVertexArray(0);
   // End using the shader program
   glUseProgram(0);
-  
+
   // Randomly choose a triangle vertex index
   std::uniform_int_distribution<int> intDistribution(0, m_points.size() - 1);
   int index{intDistribution(m_randomEngine)};
