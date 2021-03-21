@@ -9,7 +9,7 @@ fazendo uso das funções arco seno e arco cosseno, porém repetindo as de forma
 
 Já para as ligações peptídicas, foram desenhadas linhas (com pontos que possuem as mesmas coordenadas que as da hélices opostas), com uma cor vermelha fixa para diferenciação e leve gradiante entre vermelho e preto para dá um efeito visual mais agradável para a figura final.
 
-## Miscelânea
+## Comentários
 Os valores definidos como incremento para o step foram encontrados de forma empírica, porém os testes acabaram sendo realizados numa máquina que possuía FPS bastante elevados em comparação com os 75 fixo do WebGL, infelizmente a adaptação para o webGL acabou não ficando tão legal, ou então levou a um funcionamento não tão bom em desktop.
 
 Além disso utilizar o intervalo de tempo "puro" em si, não foi uma alternativa muito boa. Talvez utilizando um valor relativo com base no FPS (o mesmo vale para o incremento nas funções arco seno e arco cosseno) fosse uma alternativa melhor.
